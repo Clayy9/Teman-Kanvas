@@ -1,0 +1,22 @@
+/* Set color, font, etc */
+:root{
+    --orange:#FF7A3E;
+    --black:#1D1D1D;
+    --white:#FFFFFF;
+}
+
+@font-face {
+    font-family: bold ;
+    src: url(../font/Inter-Bold.ttf);
+}
+
+@font-face {
+    font-family: regular ;
+    src: url(../font/Inter-Regular.ttf);
+}
+
+/* Styling */
+* {
+    box-sizing: border-box;
+}
+
