@@ -1,8 +1,9 @@
 /* Set color, font, etc */
 :root{
     --orange:#FF7A3E;
-    --black:#1D1D1D;
+    --black:#303030;
     --white:#FFFFFF;
+    --background: #F1F2F6;
 }
 
 @font-face {
@@ -19,10 +20,101 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
+}
+  
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+} 
+
 /* Styling */
 * {
     box-sizing: border-box;
-    margin: 0;
+    margin:0px;
+    padding: 0;
+}
+
+body {
+    background-color: var(--background);
+    min-height: 200vh;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 30px 65px;
+    z-index: 100000;
+}
+
+header.sticky {
+    padding: 0px 100px;
+    background: var(--orange);
+}
+
+#logo {
+    position: relative;
+    width: 100px;
+    color: var(--white);
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+}
+
+header ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: var(--black);
+    letter-spacing: 1px;
+    font-family: regular;
+    transition: 0.6s;
+}
+
+header.sticky .logo,
+header.sticky ul li a {
+    color: var(--white);
+}
+
+.product {
+    position: relative;
+    width: 100%;
+    height:100vh;
+}
+
+.benefit {
+    position: relative;
+    width: 100%;
+    height:100vh;
+}
+
+.pricing {
+    position: relative;
+    width: 100%;
+    height:100vh;
+}
+
+.testimonial {
+    position: relative;
+    width: 100%;
+    height:100vh;
 }
 
 #testimonial{
@@ -47,36 +139,43 @@ html {
     100% {transform: translateX(-100%);}
 }
 
-#main_illustration{
+#main_illustration {
+    margin-top: 100px;
     display: inline-flex;
     align-items: center;
     justify-content:center;
     margin-bottom: 30px;
 }
-#illustration{
+#illustration {
     margin-left:30px;
 }
-#illustration_text{
+
+#illustration_text {
     position: absolute;
     right: 30px;
     margin-right: 20px;
+    color:var(--black);
 }
-#illustration_text > h1{
+
+#illustration_text > h1 {
     font-size: 48px ;
     font-family: bold;
-    line-height:43px;
+    line-height:50px;
 }
-#illustration_text > p{
+
+#illustration_text > p {
     font-size:20px;
     font-family: regular;
     margin-top: 14px;
 }
-#icon{
+
+#icon {
     margin-left:100px;
     display:flex;
     gap:100px;
 }
-#button{
+
+#button {
     display: flex;
     justify-content:center;
     align-items: center;
@@ -90,7 +189,47 @@ html {
     width: 170px;
     height: 50px;
     margin-top: 20px;
+    cursor: hand;
 }
-#button:hover{
+
+#button:hover {
     background-color: #e7713b;
+    cursor: hand;
+}
+
+#workflow {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+#workflow > h1 {
+    font-family: bold;
+    color:var(--black);
+    font-size: 32px;
+    margin-left:40px;
+}
+
+#workflowContent{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#workflowContent > div {
+    padding:10px;
+   }
+
+#workflowContent  .workflow_picture {
+    border-radius: 15px 50px;
+}
+
+
+#title h2{
+    font-family: bold;
+    color:var(--black);
+    font-size: 32px;
+    
+}
+#plan1, #play2, #play3{
+    border: 1px solid var(--black);
 }

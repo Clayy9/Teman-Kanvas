@@ -10,7 +10,7 @@
     <!-- Link -->
 
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../assets/faviconTK.ico">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
 </head>
@@ -18,14 +18,14 @@
 <body>
 
     <!-- Navbar -->
-    <header id="header">
-        <h1>Nav</h1>
-        <nav>
-            <a href="#product">Product</a>
-            <a href="#benefit">Benefit</a>
-            <a href="#pricing">Pricing</a>
-            <a href="#testimonial">Testimonial</a>
-        </nav>
+    <header id="header" class="header">
+        <a href="#" id="logo" class="logo" alt="TemanKanvas"><img src="../assets/Logo.svg"></a>
+        <ul>
+            <li><a href="#product">Product</a></li>
+            <li><a href="#benefit">Benefit</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#testimonial">Testimonial</a></li>
+        </ul>
     </header>
 
     <!-- Headline -->
@@ -51,24 +51,73 @@
         </div>
     </div>
     <!-- Alur Progres -->
+    <div id="workflow">
+        <h1>Our Workflow</h1>
+        <div id="workflowContent">
+            <div><img class="workflow_picture" src="../assets/Research.svg" alt="Research" width="92%" ; height="auto"></div>
+            <div><img class="workflow_picture" src="../assets/Discuss.svg" alt="Discuss" width="92%" ; height="auto"></div>
+            <div><img class="workflow_picture" src="../assets/Design.svg" alt="Design" width="92%" ; height="auto"></div>
+            <div><img class="workflow_picture" src="../assets/Consultation.svg" alt="Consultation" width="92%" ; height="auto"></div>
+        </div>
+    </div>
 
     <!-- Product -->
     <section id="product">
-
-    </section>
+        
+    </section>  
+    
     <!-- Benefit -->
     <section id="benefit">
 
     </section>
+
     <!-- Pricing -->
     <section id="pricing">
-
+        <div id="title">
+            <h2>Subscription Plan</h2>
+        </div>
+        <div id="plan">
+            <div id="plan1">
+            <h2>Basic</h2>
+                <ul class="plan1">
+                    <li>Ideal for individuals who need basic design services</li>
+                    <li>1 Design</li>
+                    <li>$40</li>
+                    <li>/week</li>
+                </ul>
+            </div>
+        </div>
+            <div id="plan2">
+                <h2>Advance</h2>
+                <ul class="plan2">
+                    <li>Ideal for startups in various industries</li>
+                    <li>3 Design</li>
+                    <li>$100</li>
+                    <li>/month</li>
+                </ul>
+            </div>
+            <div id="plan3">
+                <h2>Premium</h2>
+                <ul class="plan3">
+                    <li>Ideal for advanced design plan</li>
+                    <li>7 Design</li>
+                    <li>$250</li>
+                    <li>/3 month</li>
+                </ul>
+            </div>
     </section>
     <!-- Testimonial -->
     <section id="testimonial">
         <img src="../assets/Testimonial_loop.svg" alt="Testimonial">
     </section>
     <!-- footer -->
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
 </body>
 
 </html>
