@@ -15,8 +15,39 @@
     src: url(../font/Inter-Regular.ttf);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Styling */
 * {
     box-sizing: border-box;
+    margin: 0;
 }
 
+#testimonial {
+    background-color: var(--orange);
+    height:220px;
+    width:auto;
+    position:relative;
+}
+
+#testimonial > div {   
+    position:absolute;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width:100%;
+    overflow:hidden;
+    background: url(../assets/testimonial.svg) repeat-x;
+
+
+    animation-name:testimonial-animation;
+    animation-duration:10s;
+    animation-direction:normal;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+@keyframes testimonial-animation{
+
+}
