@@ -185,9 +185,10 @@ header.sticky ul li a {
 }
 
 #illustration_text>p {
-    font-size: 20px;
+    font-size: 18px;
     font-family: regular;
     margin-top: 14px;
+    margin-right: 30px;
 }
 
 #icon {
@@ -321,12 +322,6 @@ header.sticky ul li a {
     color: var(--black);
     font-size: 32px;
 }
-.basic{
-    margin-top:18px;
-}
-.advance{
-    margin-top: 18px;
-}
 #pricing1{
     display:flex;
     justify-content: center;
@@ -405,15 +400,6 @@ header.sticky ul li a {
 .card_wrapper:last-child:hover{
     border: 1.5px solid var(--lightblue);
 }
-.card_price:first-child{
-    color:var(--darkpurple);
-}
-.card_price:nth-child(2){
-    color:var(--orange);
-}
-.card_price:last-child{
-    color:#4697A5;
-}
 .card_price{
     font-size: 30px;
     font-weight: 800;
@@ -427,7 +413,7 @@ header.sticky ul li a {
 .plan{
     color:var(--orange);
 }
-.ideal{
+.axe{
     color:var(--darkblue);
 }
 .card_wrapper:first-child:hover [class*="we"]{
