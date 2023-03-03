@@ -19,13 +19,13 @@
     <header id="header" class="header">
         <a href="#" id="logo" class="logo" alt="TemanKanvas"><img src="../assets/Logo1.svg"></a>
         <ul>
-            <li><a href="#product" id="product">Product</a></li>
             <li><a href="#benefit">Benefit</a></li>
+            <li><a href="#workflow">Workflow</a></li>
             <li><a href="#pricing">Pricing</a></li>
-            <li><a href="#testimonial">Testimonial</a></li>
         </ul>
     </header>
-    <a href="#"><button id="back-top" class="back-top">tes</button></a>
+    <button onclick="topFunction()" id="top-button" class="top-button" title="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
     <!-- Headline -->
     <div id="headline">
         <div id="main_illustration">
@@ -34,7 +34,8 @@
             </div>
             <div id="illustration_text">
                 <h1>Professional design team<br>with unlimited revisions<br>and cost savings</h1>
-                <p>The service can be a great option for businesses looking for a high-quality,<br>custom website design that is tailored to their needs and goals,<br>while also being affordable and cost-effective.</p>
+                <p>The service can be a great option for businesses looking for a high-quality,<br>custom website design
+                    that is tailored to their needs and goals,<br>while also being affordable and cost-effective.</p>
             </div>
         </div>
         <div id="icon">
@@ -49,25 +50,36 @@
         </div>
     </div>
 
-
+    <!-- Testimonial -->
+    <section id="testimonial">
+        <img src="../assets/Testimonial_loop.svg" alt="Testimonial">
+    </section>
+    
     <div id="box">
-
-        <!-- Product -->
-        <section id="product">
-            <h1>What's include in our subscription?</h1>
+        <!-- Benefit -->
+        <section id="benefit"><br><br>
+            <div id="title">
+                <h1>Benefit You Will Enjoy</h1>
+            </div>
             <div id="box_productBox">
                 <div class="productBox" id="productBox1">
-                    <div class="iconProductBox">
-                        <h1>
-                    </div>
+                    <div class="icon"><img src="../assets/icon-design.png" width="20%" alt=""></div>
                     <h1>Custom Design</h1><br>
                     <h3>We will work on all the designs you want within the specified time</h3>
                 </div>
                 <div class="productBox" id="productBox2">
+                    <div class="icon"><img src="../assets/icon-timer.png" width="20%" alt=""></div>
                     <h1>Fast Response Team</h1><br>
                     <h3>We will be active 24 hours and gladly accept your order</h3>
                 </div>
                 <div class="productBox" id="productBox3">
+                    <div class="icon"><img src="../assets/icon-money.png" width="20%" alt=""></div>
+                    <h1>Reduce Expenses</h1><br>
+                    <h3>Our product saves your company's expenses by eliminating the need to hire a design team.
+                    </h3>
+                </div>
+                <div class="productBox" id="productBox3">
+                    <div class="icon"><img src="../assets/icon-printing.png" width="20%" alt=""></div>
                     <h1>Printing Services</h1><br>
                     <h3>We can realize your product design and deliver anywhere</h3>
 
@@ -77,112 +89,105 @@
 
 
         <!-- Alur Progres -->
-        <div id="workflow">
-            <h1>Our Workflow</h1>
-            <div id="workflowContent">
-                <div class="workflow_image">
-                    <div class="tooltip">
-                        <img class="workflow_picture" src="../assets/Research.svg" alt="Research" width="85%" ;
-                            height="auto"> <span class="tooltiptext">Research</span>
-                    </div>
+        <section id="workflow"><br><br>
+            <div id="workflow">
+                <div id="title">
+                    <h1>Our Workflow</h1>
                 </div>
-
-                <div class="workflow_image">
-                    <div class="tooltip">
-                        <img class="workflow_picture" src="../assets/Discuss.svg" alt="Discuss" width="85%" ;
-                            height="auto"> <span class="tooltiptext">Discuss</span>
+                <div id="workflowContent">
+                    <div class="workflow_image">
+                        <div class="tooltip">
+                            <img class="workflow_picture" src="../assets/Research.svg" alt="Research" width="85%" ;
+                                height="auto">
+                            <span class="tooltiptext">Research</span>
+                        </div>
                     </div>
-                </div>
-
-                <div class="workflow_image">
-                    <div class="tooltip">
-                        <img class="workflow_picture" src="../assets/Design.svg" alt="Design" width="85%" ;
-                            height="auto"> <span class="tooltiptext">Design</span>
+        
+                    <div class="workflow_image">
+                        <div class="tooltip">
+                            <img class="workflow_picture" src="../assets/Discuss.svg" alt="Discuss" width="85%" ; height="auto">
+                            <span class="tooltiptext">Discuss</span>
+                        </div>
                     </div>
-                </div>
-
-                <div class="workflow_image">
-                    <div class="tooltip">
-                        <img class="workflow_picture" src="../assets/Consultation.svg" alt="Consultation" width="85%" ;
-                            height="auto"> <span class="tooltiptext">Consultation</span>
+        
+                    <div class="workflow_image">
+                        <div class="tooltip">
+                            <img class="workflow_picture" src="../assets/Design.svg" alt="Design" width="85%" ; height="auto">
+                            <span class="tooltiptext">Design</span>
+                        </div>
+                    </div>
+        
+                    <div class="workflow_image">
+                        <div class="tooltip">
+                            <img class="workflow_picture" src="../assets/Consultation.svg" alt="Consultation" width="85%" ;
+                                height="auto"> <span class="tooltiptext">Consultation</span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-
-        <!-- Benefit -->
-        <section id="benefit">
-
         </section>
 
         <!-- Pricing -->
-        <section id="pricing">
+        <section id="pricing"><br><br>
             <div id="title">
-                <h1>Subscription Plan</h1>
+                <h1>Subscription Plans</h1>
             </div>
             <div id="pricing1">
                 <div class="card_wrapper">
-                <div class="basic text">
-                    <h2>Basic</h2>
+                    <div class="basic text">
+                        <h2>Basic</h2>
+                    </div>
+                    <br><br>
+                    <div class="card_detail">
+                        <p><span class="fas fa-check check"></span>Ideal for simple design</p>
+                        <p><span class="fas fa-check check"></span>Limited revisions</p>
+                        <p><span class="fas fa-check check"></span>Max 1 Design / day</p>
+                    </div>
+                    <br><br>
+                    <div class="card_price">
+                        <p class="week">$40<sub>/Week</sub></p>
+                    </div>
+                    <br><br>
+                    <button class="card_button first">Purchase</button>
                 </div>
-                <br><br>
-                <div class="card_detail">
-                    <p><span class="fas fa-check check"></span>Ideal for simple design</p>
-                    <p><span class="fas fa-check check"></span>Unlimited revisions</p>
-                    <p><span class="fas fa-check check"></span>1 Design</p>
+                <div class="card_wrapper">
+                    <div class="advance text">
+                        <h2>Advance</h2>
+                    </div>
+                    <br><br>
+                    <div class="card_detail">
+                        <p><span class="fas fa-check check"></span>Ideal for various industries</p>
+                        <p><span class="fas fa-check check"></span>Limited revisions</p>
+                        <p><span class="fas fa-check check"></span>Max 3 Designs / day</p>
+                    </div>
+                    <br><br>
+                    <div class="card_price">
+                        <p class="plan">$100<sub>/Month</sub></p>
+                    </div>
+                    <br><br>
+                    <button class="card_button second">Purchase</button>
                 </div>
-                <br><br>
-                <div class="card_price">
-                    <p class="week">$40<sub>/Week</sub></p>
+                <div class="card_wrapper">
+                    <div class="premium text">
+                        <h2>Premium</h2>
+                    </div>
+                    <br><br>
+                    <div class="card_detail">
+                        <p><span class="fas fa-check check"></span>Ideal for advanced design</p>
+                        <p><span class="fas fa-check check"></span>Unlimited revisions</p>
+                        <p><span class="fas fa-check check"></span>Max 5 Design / day</p>
+                    </div>
+                    <br><br>
+                    <div class="card_price">
+                        <p class="axe">$250<sub>/3 Month</sub></p>
+                    </div>
+                    <br><br>
+                    <button class="card_button third">Purchase</button>
                 </div>
-                <br><br>
-                <button class="card_button first">Purchase</button>
+
             </div>
-                <div class="card_wrapper">
-                <div class="advance text">
-                    <h2>Advance</h2>
-                </div>
-                <br><br>
-                <div class="card_detail">
-                    <p><span class="fas fa-check check"></span>Ideal for various industries</p>
-                    <p><span class="fas fa-check check"></span>Unlimited revisions</p>
-                    <p><span class="fas fa-check check"></span>3 Design</p>
-                </div>
-                <br><br>
-                <div class="card_price">
-                    <p class="plan">$100<sub>/Month</sub></p>
-                </div>
-                <br><br>
-                <button class="card_button second">Purchase</button>
-                </div>
-                <div class="card_wrapper">
-                <div class="premium text">
-                    <h2>Premium</h2>
-                </div>
-                <br><br>
-                <div class="card_detail">
-                    <p><span class="fas fa-check check"></span>Ideal for advanced design</p>
-                    <p><span class="fas fa-check check"></span>Unlimited revisions</p>
-                    <p><span class="fas fa-check check"></span>7 Design</p>
-                </div>
-                <br><br>
-                <div class="card_price">
-                    <p class="axe">$250<sub>/3 Month</sub></p>
-                </div>
-                <br><br>
-                <button class="card_button third">Purchase</button>
-                </div>
-        
-            </div> 
         </section>
-
     </div>
-
-    <!-- Testimonial -->
-    <section id="testimonial">
-        <img src="../assets/Testimonial_loop.svg" alt="Testimonial">
-    </section>
 
     <!-- footer -->
     <footer class="footer">
