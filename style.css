@@ -4,6 +4,11 @@
     --black: #303030;
     --white: #FFFFFF;
     --background: #F1F2F6;
+    --lightpurple: #8F65EB;
+    --darkpurple: #6F33F1;
+    --lightorange: #E29236;
+    --lightblue:#4697A5;
+    --darkblue:#18B1C9;
 }
 
 @font-face {
@@ -311,127 +316,184 @@ header.sticky ul li a {
     opacity: 1;
 
   }
-#plan{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-.plan_name{
-    font-size:25px;
-    text-align: center;
-    color:black;
-}
+
 #title h1{
     font-family: bold;
     color: var(--black);
     font-size: 32px;
 }
-#plan1{
-    border: 1px solid #6F33F1;
-    list-style-position: inside;
-    padding: 25px 30px;
-    border-radius: 5px;
-    width: 300px;
-    text-align: justify;
+.basic{
+    margin-top:18px;
 }
-#plan1 h1{
-    text-align: right;
-    color:#6F33F1;
+.advance{
+    margin-top: 18px;
 }
-#plan1 h1:hover{
-    color:#6F33F1;  
-}
-.button_plan1{
-    background-color:#8F65EB ;
-    color:var(--white);
-    display: flex;
+#pricing1{
+    display:flex;
     justify-content: center;
+    flex-wrap: wrap;
+    width:100%;
+    height: 520px;
+    padding:15px;
+    font-family: regular;
+}
+.card_detail{
+    font-family: regular;
+    font-size:18px;
+    line-height: 38px;
+}
+.card_wrapper{
+    display:flex;
+    flex-direction: column;
     align-items: center;
-    gap: 45px;
-    color: var(--white);
-    font-family: bold;
-    font-weight: bold;
-    font-size: 13px;
-    border-radius: 10px;
-    width: 170px;
-    height: 50px;
-    margin-top: 20px;
-    cursor: hand;
-    margin-left:30px;
-}
-.button_plan1:hover{
-    background-color:#6F33F1 ;
-}
-#plan2{
-    border: 1px solid #E29236;
-    list-style-position: inside;
-    padding: 25px 30px;
-    border-radius: 5px;
-    width: 300px;
-}
-#plan2 h1{
-    text-align: right; 
-    color:#E29236; 
-}
-#plan2 h1:hover{
-    color:#E29236; 
-}
-.button_plan2{
-    background-color:#E29236 ;
-    color:var(--white);
-    display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 45px;
-    color: var(--white);
-    font-family: bold;
-    font-weight: bold;
-    font-size: 13px;
-    border-radius: 10px;
-    width: 170px;
-    height: 50px;
-    margin-top: 20px;
-    cursor: hand;
-    margin-left:30px;
+    width: 320px;
+    height: auto;
+    background-color: var(--white);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; 
+    padding:20px;
+    margin:10px;
+    transition: all 0.2s ease-in;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
-.button_plan2:hover{
-    background-color:var(--orange) ;
+.card_wrapper:hover{
+    transform: scale(1.1);
 }
-#plan3{
-    border: 1px solid #3395A4;
-    list-style-position: inside;
-    padding: 25px 30px;
-    border-radius: 5px;
-    width: 300px;
+.card_wrapper .text> h2{
+    font-size: 35px;
+    padding-top:0px;
 }
-#plan3 h1{
-    text-align: right;
-    color:#3395A4;
+.card_wrapper:first-child{
+    border: 1.5px solid none;
 }
-#plan3 h1:hover{
-    text-align: right;
-    color:#18B1C9;
+.card_wrapper:first-child .text> h2{
+    color:var(--darkpurple);
 }
-.button_plan3{
-    background-color:#3395A4;
+.card_wrapper:first-child:hover .text> h2{
+    transform: scale(1.1);
+    color:var(--lightpurple);
+    letter-spacing: 2;
+}  
+.card_wrapper:first-child:hover{
+    border: 1.5px solid var(--lightpurple);
+}
+.card_wrapper:nth-child(2){
+    border: 1.5px solid none;
+}
+.card_wrapper:nth-child(2) .text> h2{
+    color:var(--orange);
+}
+.card_wrapper:nth-child(2):hover .text> h2{
+    transform: scale(1.1);
+    color:var(--lightorange);
+    letter-spacing: 2;
+}  
+.card_wrapper:nth-child(2):hover{
+    border: 1.5px solid var(--lightorange);
+}
+.card_wrapper:last-child{
+    border: 1.5px solid none;
+}
+.card_wrapper:last-child .text> h2{
+    color:var(--darkblue);
+}
+.card_wrapper:last-child:hover .text> h2{
+    transform: scale(1.1);
+    color:var(--lightblue);
+    letter-spacing: 2;
+}  
+.card_wrapper:last-child:hover{
+    border: 1.5px solid var(--lightblue);
+}
+.card_price:first-child{
+    color:var(--darkpurple);
+}
+.card_price:nth-child(2){
+    color:var(--orange);
+}
+.card_price:last-child{
+    color:#4697A5;
+}
+.card_price{
+    font-size: 30px;
+    font-weight: 800;
+}
+.card_price > p > sub{
+    font-size:18px;
+}
+.week{
+    color:var(--darkpurple);
+}
+.plan{
+    color:var(--orange);
+}
+.ideal{
+    color:var(--darkblue);
+}
+.card_wrapper:first-child:hover [class*="we"]{
+    color:var(--lightpurple);
+}
+.card_wrapper:nth-child(2):hover [class*="pl"]{
+    color:var(--lightorange);
+}
+.card_wrapper:last-child:hover [class*="ax"]{
+    color:var(--lightblue);
+}
+.card_button{
+    padding:6px 30px;
     color:var(--white);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 45px;
-    color: var(--white);
-    font-family: bold;
-    font-weight: bold;
-    font-size: 13px;
-    border-radius: 10px;
-    width: 170px;
-    height: 50px;
-    margin-top: 20px;
-    cursor: hand;
-    margin-left:30px;
+    border-radius:10px;
+    cursor: pointer;
+    transition: all 50ms ease-in;
+    font-size: 18px;
+    padding: 14px 48px;
+    margin-bottom:35px
 }
-.button_plan3:hover{
-    background-color:#18B1C9;
+.first{
+    border:2px solid var(--darkpurple);
+    background-color: var(--darkpurple);
+}
+.second{
+    border:2px solid var(--orange);
+    background-color: var(--orange);
+}
+.third{
+    border:2px solid var(--darkblue);
+    background-color: var(--darkblue);
+}
+.card_wrapper:first-child:hover [class*="fi"]{
+    border:2px solid var(--lightpurple);
+    background-color: var(--lightpurple);
+}
+.card_wrapper:nth-child(2):hover [class*="se"]{
+    border:2px solid var(--lightorange);
+    background-color: var(--lightorange);
+}
+.card_wrapper:last-child:hover [class*="th"]{
+    border:2px solid var(--lightblue);
+    background-color: var(--lightblue );
+}
+.check{
+    margin-right: 8px;
+}
+.card_wrapper:first-child .check{
+    color:var(--darkpurple);
+}
+.card_wrapper:first-child:hover .check{
+    color:var(--lightpurple);
+}
+.card_wrapper:nth-child(2) .check{
+    color:var(--orange);
+}
+.card_wrapper:nth-child(2):hover .check{
+    color:var(--lightorange);
+}
+.card_wrapper:last-child .check{
+    color:var(--darkblue);
+}
+.card_wrapper:last-child:hover .check{
+    color:var(--lightblue);
 }
 
 footer {
