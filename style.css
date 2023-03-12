@@ -330,7 +330,7 @@ header.sticky ul li a {
   }
   
   .tooltip .tooltiptext {
-    opacity: 0;
+    opacity: 1;
     width: 150px;
     background-color: var(--orange);
     color: var(--white);
@@ -348,10 +348,6 @@ header.sticky ul li a {
 
     /* Transition */
     transition: 0.6s;
-  }
-  
-  .tooltip:hover .tooltiptext {
-    opacity: 1;
   }
 
 #title h1{
