@@ -149,51 +149,45 @@ header.sticky ul li a {
     height: 100vh;
 }
 
-#testimonial {
-    padding: 22px 0px;
+.testi_wrapper {
     width: 100%;
-}
-
-#testimonial .testi_container {
-    overflow: hidden;
-    height: 100px;
-    margin: auto;
-    position: relative;
-    width: auto;
-}
-
-#testimonial .testipic_container {
+    height: auto;
     display: flex;
-    animation: testimonial 25s infinite linear;
-    width: calc(250px * 8);
+    align-items: center;
+    justify-content: center;
 }
 
-#testimonial .testi {
-    /* flex-basis: 30%;
-    flex-shrink: 0; */
+.testi_slider {
+    width: 100%;    
+    height: 150px;
+    position: relative;
+    background: var(--orange);
+    display: flex;
+    overflow: hidden;
+}
+
+.testi {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    animation: slideshow 15s linear infinite;
+}
+
+.testi img {
     height: 100px;
-    width: 250px;
+    padding: 0 10px;
 }
 
-/* #testimonial img {
-    width: 100%;
-    object-fit: cover;
-} */
-
-@keyframes testimonial {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(calc(-250px * 4));
-    }
+@keyframes slideshow {
+    0% {transform: translateX(0);}
+    100% {transform: translateX(-100%);}
 }
 
 /* .testimonial {
     position: relative;
     width: 100%;
     height: 100vh;
-} */
+}
 
 #testimonial {
     height: 180px;
@@ -205,7 +199,7 @@ header.sticky ul li a {
     margin-bottom:  0px;
 }
 
-/* #testimonial>img {
+#testimonial>img {
     margin-top: 40px;
     margin-bottom: 40px;
     animation: move-rtl 1000000ms linear infinite;
@@ -217,7 +211,6 @@ header.sticky ul li a {
     0% {
         transform: translateX(0);
     }
-
     100% {
         transform: translateX(-100%);
     }
@@ -737,11 +730,13 @@ footer {
 .left-footer {
     margin-right: 1.25em;
     margin-bottom: 2em;
-    line-height: 1.5em;
+    line-height: 2em;
+    display: flex;
+    flex-wrap: row wrap;
 }
 
 .left-footer img {
-    width: 20%;
+    width: 10em;
     filter: brightness(100);
 }
 
