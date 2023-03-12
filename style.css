@@ -149,23 +149,63 @@ header.sticky ul li a {
     height: 100vh;
 }
 
-.testimonial {
+#testimonial {
+    padding: 22px 0px;
+    width: 100%;
+}
+
+#testimonial .testi_container {
+    overflow: hidden;
+    height: 100px;
+    margin: auto;
+    position: relative;
+    width: auto;
+}
+
+#testimonial .testipic_container {
+    display: flex;
+    animation: testimonial 25s infinite linear;
+    width: calc(250px * 8);
+}
+
+#testimonial .testi {
+    /* flex-basis: 30%;
+    flex-shrink: 0; */
+    height: 100px;
+    width: 250px;
+}
+
+/* #testimonial img {
+    width: 100%;
+    object-fit: cover;
+} */
+
+@keyframes testimonial {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 4));
+    }
+}
+
+/* .testimonial {
     position: relative;
     width: 100%;
     height: 100vh;
-}
+} */
 
 #testimonial {
-    height: 200px;
+    height: 180px;
     background-color: var(--orange);
     width: auto;
     display: flex;
     justify-content: flex-start;
     overflow: hidden;
-    margin-bottom: 20px;
+    margin-bottom:  0px;
 }
 
-#testimonial>img {
+/* #testimonial>img {
     margin-top: 40px;
     margin-bottom: 40px;
     animation: move-rtl 1000000ms linear infinite;
@@ -181,7 +221,8 @@ header.sticky ul li a {
     100% {
         transform: translateX(-100%);
     }
-}
+} */
+
 #headline{
     margin-bottom: 40px;
 }
@@ -245,11 +286,82 @@ header.sticky ul li a {
     cursor: pointer;
 }
 
+#box_productBox h3{
+    font-family: regular;
+    font-size: 16px;
+    opacity: 0.3;
+    max-width: 300px;
+}
+
+
+#box_ourproductBox{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    margin-left: 40px;
+}
+
+.ourproductBox {
+    margin-top: 40px;
+    background-color: var(--white);
+    border-radius: 20px;
+    padding:20px;
+    margin-bottom: 0px;
+    margin-right: 40px;
+}
+
+.ourproductBox h4{
+    font-size: 12px;
+    font-family: regular;
+    color:var(--black);
+    opacity: 0.5;
+    margin-bottom:4px;
+}
+
+.ourproductBox a{
+    list-style-type: none;
+    text-decoration: none;
+    font-family: regular;
+    color:var(--black);
+    font-size: 12px;
+}
+
+.ourproductBox a:hover{
+    list-style-type: none;
+    text-decoration: none;
+    font-family: regular;
+    color:var(--orange);
+    font-size: 12px;
+}
+
+
+#box_ourproductBox h1{
+    font-family: bold;
+    font-size: 24px;
+    max-width: 300px;
+    opacity: 0.7;
+    box-shadow:
+  0.2px 0.6px 9.7px rgba(0, 0, 0, 0.002),
+  0.5px 1.4px 23.3px rgba(0, 0, 0, 0.003),
+  0.9px 2.6px 43.8px rgba(0, 0, 0, 0.005),
+  1.6px 4.7px 78.2px rgba(0, 0, 0, 0.007),
+  2.9px 8.8px 146.2px rgba(0, 0, 0, 0.01),
+  7px 21px 350px rgba(0, 0, 0, 0.02)
+;   
+}
+
+.ourproductBox img{
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
 #box_productBox{
     display: flex;
     flex-direction:row;
     justify-content: center;
-    margin-left:42px;
+    margin-left:88px;
+    margin-right:44px;
 }
 
 .productBox {
@@ -278,27 +390,13 @@ header.sticky ul li a {
 
 .productBox .icon{
     padding: 5px;
-    border-radius: 1000px;
     margin-bottom: 10px;
 }
 
-#box_productBox h3{
-    font-family: regular;
-    font-size: 16px;
-    opacity: 0.3;
-    max-width: 300px;
-}
 
-#product > h1 {
-    font-family: bold;
-    color: var(--black);
-    font-size: 32px;
-    margin: 0px;
-}
 
 #workflow {
     margin-bottom: 0px;
-
 }
 
 #workflowContent {
@@ -320,7 +418,7 @@ header.sticky ul li a {
 
 #workflowContent .workflow_image {
     border-radius: 15px 50px;
-
+    margin-right: 20px;
 }
 
 .tooltip {
@@ -471,7 +569,8 @@ header.sticky ul li a {
     transition: all 50ms ease-in;
     font-size: 18px;
     padding: 14px 48px;
-    margin-bottom:35px
+    margin-bottom:35px;
+    text-decoration:none;
 }
 .first{
     border:2px solid var(--darkpurple);
@@ -518,6 +617,105 @@ header.sticky ul li a {
 .card_wrapper:last-child:hover .check{
     color:var(--lightblue);
 }
+#popupbasic{
+    width:100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.8);
+    position:fixed;
+    top:0;
+    left:0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+}
+#popupadvance{
+    width:100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.8);
+    position:fixed;
+    top:0;
+    left:0;
+    opacity: 0;
+    visibility: hidden;
+}
+#popuppremium{
+    width:100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.8);
+    position:fixed;
+    top:0;
+    left:0;
+    opacity: 0;
+    visibility: hidden;
+}
+.popup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    height: auto;
+    background-color: var(--white);
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%) scale(.25);
+    padding:20px 10px;
+    padding-top:50px;
+    padding-bottom:30px;
+    visibility: hidden;
+    transition: all .5s .1s; 
+}
+.scan_me{
+    padding:6px 30px;
+    color:var(--white);
+    border-radius:10px;
+    transition: all 50ms ease-in;
+    padding: 14px 48px;
+    margin-bottom:35px
+}
+
+#popupbasic:target{
+    opacity:1;
+    visibility:visible;
+}
+#popupbasic:target #popup_content_basic{
+    visibility: visible;
+    transform: translate(-50%,-50%) scale(1);
+}
+#popupadvance:target{
+    opacity:1;
+    visibility:visible;
+}
+#popupadvance:target #popup_content_advance{
+    visibility: visible;
+    transform: translate(-50%,-50%) scale(1);
+}
+#popuppremium:target{
+    opacity:1;
+    visibility:visible;
+}
+#popuppremium:target #popup_content_premium{
+    visibility: visible;
+    transform: translate(-50%,-50%) scale(1);
+    
+}
+.payment{
+    font-family: bold;
+    font-size:35px;
+    padding-bottom:5px;
+}
+.popup_close{
+    position: absolute;
+    top:12px;
+    right:20px;
+    text-decoration: none;
+    color:var(--black);
+    font-size: 30px;
+    display:inline-block;
+    line-height: 1;
+    transition: all .3s;
+}
 
 footer {
     display: -webkit-flex;
@@ -543,7 +741,7 @@ footer {
 }
 
 .left-footer img {
-    width: 15%;
+    width: 20%;
     filter: brightness(100);
 }
 
