@@ -568,14 +568,17 @@ header.sticky ul li a {
 .first{
     border:2px solid var(--darkpurple);
     background-color: var(--darkpurple);
+    font-family: regular;
 }
 .second{
     border:2px solid var(--orange);
     background-color: var(--orange);
+    font-family: regular;
 }
 .third{
     border:2px solid var(--darkblue);
     background-color: var(--darkblue);
+    font-family: regular;
 }
 .card_wrapper:first-child:hover [class*="fi"]{
     border:2px solid var(--lightpurple);
@@ -620,6 +623,7 @@ header.sticky ul li a {
     opacity: 0;
     visibility: hidden;
     transition: all .3s;
+    z-index: 1000;
 }
 #popupadvance{
     width:100%;
@@ -630,6 +634,7 @@ header.sticky ul li a {
     left:0;
     opacity: 0;
     visibility: hidden;
+    z-index: 1000;
 }
 #popuppremium{
     width:100%;
@@ -640,6 +645,7 @@ header.sticky ul li a {
     left:0;
     opacity: 0;
     visibility: hidden;
+    z-index: 1000;
 }
 .popup{
     display: flex;
@@ -704,10 +710,11 @@ header.sticky ul li a {
     right:20px;
     text-decoration: none;
     color:var(--black);
-    font-size: 30px;
+    font-size: 40px;
     display:inline-block;
     line-height: 1;
     transition: all .3s;
+    font-weight: bold;
 }
 
 footer {
