@@ -130,7 +130,9 @@ header.sticky ul li a {
     color: var(--white);
     transition: 0.3s;
 }
-
+#product{
+    margin-top:30px;
+}
 .product {
     position: relative;
     width: 100%;
@@ -242,7 +244,7 @@ header.sticky ul li a {
 
 #illustration_text>h1 {
     font-size: 48px;
-    font-family: bold;
+    font-family: regular;
     line-height: 50px;
 }
 
@@ -288,6 +290,9 @@ header.sticky ul li a {
     cursor: pointer;
 }
 
+#benefit{
+    margin-top: 30px;
+}
 #box_productBox h3{
     font-family: regular;
     font-size: 16px;
@@ -376,7 +381,7 @@ header.sticky ul li a {
 }
 
 #box_productBox h1{
-    font-family: bold;
+    font-family: regular;
     font-size: 24px;
     max-width: 300px;
     opacity: 0.7;
@@ -398,6 +403,7 @@ header.sticky ul li a {
 
 
 #workflow {
+    margin-top:40px;
     margin-bottom: 0px;
 }
 
@@ -463,12 +469,13 @@ visibility: visible;
     
 }
 
+
 #title h1{
-    font-family: bold;
+    font-family: regular;
     color: var(--black);
     font-size: 32px;
-    margin-top: 30px;
-    margin-bottom: 2px;
+    margin-top: -80px;
+    margin-bottom: 12px;
     text-align: center;
 }
 #pricing1{
@@ -479,7 +486,7 @@ visibility: visible;
     height: 520px;
     padding:15px;
     font-family: regular;
-    margin-bottom: 20px;
+    margin-bottom: 65px;
 }
 .card_detail{
     font-family: regular;
@@ -500,6 +507,7 @@ visibility: visible;
     margin:20px 10px;
     transition: all 0.2s ease-in;
     border-radius: 15px 50px;
+    margin-bottom: 20px;
 }
 .card_wrapper:hover{
     transform: scale(1.1);
