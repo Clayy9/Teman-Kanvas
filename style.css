@@ -244,7 +244,7 @@ header.sticky ul li a {
 
 #illustration_text>h1 {
     font-size: 48px;
-    font-family: regular;
+    font-family: bold;
     line-height: 50px;
 }
 
@@ -381,7 +381,7 @@ header.sticky ul li a {
 }
 
 #box_productBox h1{
-    font-family: regular;
+    font-family: bold;
     font-size: 24px;
     max-width: 300px;
     opacity: 0.7;
@@ -450,6 +450,7 @@ header.sticky ul li a {
     text-align: center;
     visibility: hidden;
     opacity: 0;
+    font-weight: lighter;
 }
 
 .workflow_container:hover .info-workflow{
@@ -471,7 +472,7 @@ visibility: visible;
 
 
 #title h1{
-    font-family: regular;
+    font-family: bold;
     color: var(--black);
     font-size: 32px;
     margin-top: -80px;
