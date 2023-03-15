@@ -404,51 +404,64 @@ header.sticky ul li a {
 #workflowContent {
     display: flex;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 0px;
     margin-left:60px;
     margin-right:20px;
 }
 
-#workflowContent .workflow_picture {
+.workflow_container{
+    height:500px;
+    margin:50px;
+    overflow:hidden;
+    position:relative;
     border-radius: 15px 50px;
-    filter: grayscale(1);
 }
 
-#workflowContent .workflow_picture:hover{
-    filter: grayscale(0);
-}
 
-#workflowContent .workflow_image {
-    border-radius: 15px 50px;
-    margin-right: 20px;
-}
-
-.tooltip {
-    position: relative;
-    display: inline; 
-    z-index: 1;
-  }
-  
-  .tooltip .tooltiptext {
-    opacity: 1;
-    width: 150px;
+.info-workflow {
     background-color: var(--orange);
-    color: var(--white);
+    height: 60px;
+    padding:16px;
     text-align: center;
-    border-radius: 3px 10px;
-    padding: 10px 12px;
-    font-family: regular;
-    
-    /* Position the tooltip */
-    position: absolute;
-    z-index: 10000;
-    top: -50px;
-    left: 45%;
-    margin-left: -60px;
+    position:absolute;
+    bottom:60px;
+    transition: 1s;
+    color:var(--white);
+    overflow: hidden;
+    border-radius: 0px 0px 15px 15px;
+}
 
-    /* Transition */
-    transition: 0.6s;
-  }
+.info-workflow h1{
+    font-family: bold;
+    font-size: 32;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.info-workflow h3{
+    font-family: regular;
+    font-size: 24;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.workflow_container:hover .info-workflow{
+    height:300px;
+    bottom:60px;
+
+}
+
+.workflow_container:hover h3{
+opacity: 1;
+visibility: visible;
+
+}
+
+.workflow_container:hover img{
+    filter:grayscale(1);
+    
+}
 
 #title h1{
     font-family: bold;
