@@ -38,6 +38,9 @@ body {
     /* Firefox */
 }
 
+
+
+
 /* Styling */
 * {
     box-sizing: border-box;
@@ -293,6 +296,7 @@ header.sticky ul li a {
 #benefit{
     margin-top: 30px;
 }
+
 #box_productBox h3{
     font-family: regular;
     font-size: 16px;
@@ -306,6 +310,8 @@ header.sticky ul li a {
     flex-direction:row;
     justify-content: center;
     margin-left: 40px;
+    flex-wrap: wrap;
+
 }
 
 .ourproductBox {
@@ -315,6 +321,7 @@ header.sticky ul li a {
     padding:20px;
     margin-bottom: 0px;
     margin-right: 40px;
+    width: 300px;
 }
 
 .ourproductBox h4{
@@ -369,6 +376,7 @@ header.sticky ul li a {
     justify-content: center;
     margin-left:88px;
     margin-right:44px;
+    flex-wrap: wrap;
 }
 
 .productBox {
@@ -404,15 +412,15 @@ header.sticky ul li a {
 
 #workflow {
     margin-top:40px;
-    margin-bottom: 0px;
+    margin-bottom: 80px;
 }
 
 #workflowContent {
     display: flex;
     justify-content: center;
     margin-top: 0px;
-    margin-left:60px;
-    margin-right:20px;
+    margin-left: 40px;
+    margin-right:40px;
 }
 
 .workflow_container{
@@ -430,7 +438,7 @@ header.sticky ul li a {
     padding:16px;
     text-align: center;
     position:absolute;
-    bottom:60px;
+    bottom:0px;
     transition: 1s;
     color:var(--white);
     overflow: hidden;
@@ -455,8 +463,6 @@ header.sticky ul li a {
 
 .workflow_container:hover .info-workflow{
     height:300px;
-    bottom:60px;
-
 }
 
 .workflow_container:hover h3{
