@@ -557,6 +557,7 @@ header img {
     margin-top: 0px;
     margin-left: 40px;
     margin-right:40px;
+    flex-wrap: wrap;
 }
 
 .workflow_container{
@@ -889,82 +890,49 @@ visibility: visible;
     font-weight: bold;
 }
 
-footer {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    flex-wrap: row wrap;
-    padding: 50px;
+.footer {
+    padding-top: 40px;
+    padding-bottom: 20px;
     background-color: var(--orange);
-    color: var(--white);
-}
-
-.footer > * {
-    flex: 1 100%;
     font-family: regular;
 }
 
-.left-footer {
-    margin-right: 1.25em;
-    margin-bottom: 2em;
-    line-height: 2em;
-    display: flex;
-    flex-wrap: row wrap;
-}
-
-.left-footer img {
-    width: 10em;
-    filter: brightness(100);
-}
-
-h2 {
-    font-family: bold;
+.footer .socials {
+    text-align: center;
+    padding-bottom: 25px;
 }
 
 .footer ul {
+    margin-top: 0;
+    padding: 0;
     list-style: none;
-    padding-left: 0;
-}
-
-.footer li {
-    line-height: 2em;
-}
-
-.footer a{
-    text-decoration: none;
-}
-
-.right-footer {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    flex-wrap: row wrap;
-}
-
-.right-footer > * {
-    flex: 1 50%;
-    margin-right: 1.25em;
-}
-
-.box a {
-    color: var(--white);
-}
-
-.bottom-footer {    
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
     text-align: center;
-    font-family: regular;
-    color: var(--white);
-    padding-bottom: 30px;
-    background-color: var(--orange);
 }
 
-.left-footer p {
-    padding-right: 20%;
+.footer ul li a {
     color: var(--white);
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.footer ul li a:hover {
+    opacity: 1;
+}
+
+.footer .copyright {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 13px;
+    color: var(--white);
+    opacity: 0.7;
 }
 
 .socials a {
@@ -972,7 +940,7 @@ h2 {
     width: 40px;
     height: 40px;
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 20px;
     border-radius: 4px 12px;
 }
 
@@ -1027,13 +995,12 @@ h2 {
     nav a:hover::after {
         transform: scale(1,1);
     }
-    
-    .right-footer > * {
+    /* .right-footer > * {
         flex: 1;
     }
     .left-footer > * {
         flex: 1 0px;
-    }
+    } */
 }
 
 @media (max-width: 800px) {
@@ -1046,10 +1013,10 @@ h2 {
     .testi img {
         height: 100px;
     }
-    .footer {
+    /* .footer {
         flex-direction: column;
         padding: 15px;
-    }
+    } */
 }
 
 .back-top {
