@@ -1,8 +1,3 @@
-window.addEventListener("scroll", function () {
-    let header = document.querySelector("header");
-    header.classList.toggle("sticky", window.scrollY > 0);
-})
-
 let topbutton = document.getElementById ("top-button");
 window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
