@@ -611,14 +611,14 @@ header img {
 
 .info-workflow h1 {
     font-family: bold;
-    font-size: var(--text_5);
+    font-size: var(--text_4);
     text-align: center;
     margin-bottom: 8px;
 }
 
 .info-workflow h3 {
     font-family: regular;
-    font-size: var(--text_4);
+    font-size: var(--text_3);
     text-align: center;
     visibility: hidden;
     opacity: 0;
